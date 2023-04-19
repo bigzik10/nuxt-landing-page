@@ -6,30 +6,279 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="wrapper">
-            <div class="logo">
-                <a href="#"><img src="images/logo.jpg" alt=""></a>
-            </div>
-            <div class="navbar">
+        <div class="hero">
                 <nav>
-                    <ul>
+                    <div class="logo">
+                   <img src="images/logo.jpg" alt="logo" height="30px"/>
+                   </div>
+                    <ul class="links">
                         <li><a href="#">Docs</a></li>
                         <li><a href="#">Modules</a></li>
                         <li><a href="#">Showcase</a></li>
                         <li><a href="#">Support</a></li>
                         <li><a href="#">Blog</a></li>
                     </ul>
-
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-discord"></i></a>
-                    <a href="#"><i class="fa fa-github"></i></a>
+                    <ul class="h">
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
                 </nav>
+        </div>
+        <div class="section-background"></div>
+        <div class="intro">
+            <div class="content">
+                <button class="button">Introducing Nuxt Devtools</button>
+                <div class="m-title"><b>The Intuitive Web<br>Framework</b></div>
+                <div class="m-desc">Build your next Vue.js application with confidence using Nuxt. An open source framework under MIT license that makes web development simple and powerful.</div>
+                <button class="btn "><b>Get Started</b></button> <input type="text" id="text" placeholder="> npx nuxi@latest init my-app" readonly />
             </div>
         </div>
-    </header>
+
+        <div class="section2-bg">
+        <div class="stats">
+            <div class="first-section">
+                <div class="title">Deliver an optimized <span>User Experience</span></div>
+                <div class="desc">How a user interacts with and experiences your website will determine your impact. Utility, ease of<br> use, and efficiency are key. Nuxt is built with a set of features that make this possible.</div>
+
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-icon">
+                            <img src="images/fast.svg" alt="" />
+                        </div>
+                        <h4 class="card-title"><b>Fast and Furious</b></h4>
+                        <p class="card-body">Optimized with code-splitting, tree-shaking, optimized cold-start, link prefetching, payload extraction, just to name a few. Fast by default so you can focus on building.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <img src="images/on-d.svg" alt="" />
+                        </div>
+                        <h4 class="card-title"><b>On-demand Rendering</b></h4>
+                        <p class="card-body">Decide what rendering strategy at the route level: SSR, SSG, CSR, ISR, ESR, SWR. Build any kind of website or web application with optimized performance in mind.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <img src="images/seo.svg" alt="" />
+                        </div>
+                        <h4 class="card-title"><b>SEO & Web Vitals</b></h4>
+                        <p class="card-body">By leveraging server-side rendering, ESM format and optimized images, Nuxt websites are indexable by search engines while giving the feeling of an app to the end-users.</p>
+                    </div>
+                </div>
+
+                <div class="stat-2">
+                    <div class="section-2">
+                        <div class="title">Trusted by world-class companies</div>
+                        <div class="desc">Explore our selection of websites & applications made with Nuxt. F-500 companies, creative agencies and freelancers all trust us.</div>
+                        <a href="#"><b>Discover our showcase   > </b></a>
+                    </div>
+                    <div class="wrapper">
+                        <i class="fa-solid fa-angle-left"></i>
+                        <div class="carousel">
+                            <img src="images/fast-furious.png" alt="img">
+                            <img src="images/on-demand.png" alt="img">
+                            <img src="images/seo.png" alt="img">
+                            <img src="images/logo.jpg" alt="img">
+                        </div>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+
+                <div class="stat-3">
+                    <div class="section-3">
+                        <div class="title">Discover a new <span>Developer Experience</span></div>
+                        <div class="desc">Developers deserve solutions as well designed as non-technical people. Our focus is to empower Vue developers to ship great softwares with confidence.</div>
+                        
+                        <div class="cards">
+                            <div class="card">
+                                <div class="card-icon">
+                                    <img src="images/plug.svg" alt="" />
+                                </div>
+                                <h4 class="card-title"><b>Plug & Play</b></h4>
+                                <p class="card-body">Unlock features by creating folders and files with the most intuitive directory structure made for developers and teams.</p>
+                            </div>
+                            <div class="card">
+                                <div class="card-icon">
+                                    <img src="images/automation.svg" alt="" />
+                                </div>
+                                <h4 class="card-title"><b>Automation</b></h4>
+                                <p class="card-body">Repetitive tasks are automated: auto-imports, code-splitting, typings, minification, bundling for production. and more.</p>
+                            </div>
+                            <div class="card">
+                                <div class="card-icon">
+                                    <img src="images/battries.svg" alt="" />
+                                </div>
+                                <h4 class="card-title"><b>Batteries Included</b></h4>
+                                <p class="card-body">Data fetching, state management, meta tags helpers, route guards, cookies, error handling, bundle analyzer and more.</p>
+
+                        </div>
+                    </div>
+                      <button class="button-center">Try it now</button>
+            
+                    </div>
+                </div>
+
+                <div class="stat-4">
+                    <div class="section-4">
+                        <div class="title">Trusted by the world wide web</div>
+                        <div class="desc">Their opinions are valuable and worth sharing to everyone.</div>
+
+                        <div class="wrapper">
+                            <div class="box">
+                                <p>"Nuxt offers a compelling solution and a great ecosystem to help you ship fullstack Vue apps that are performant and SEO friendly. The flexibility to choose between SSR and SSG is icing on the cake."</p>
+                                <div class="content">
+                                    <div class="info">
+                                        <div class="name"><b>Evan You</b></div>
+                                        <div class="job"><a href="#">Creator of Vue.js and Vite</a></div>
+                                    </div>
+                                    <div class="image">
+                                        <img src="images/evan.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <p>"Nuxt has outstanding developer productivity, experience, and performance right out of the gate! There’s so much attention to detail, ensuring teams have everything at their fingertips to productively build all manners of applications"</p>
+                                <div class="content">
+                                    <div class="info">
+                                        <div class="name"><b>Sarah Drasner</b></div>
+                                        <div class="job"><a href="#">Director of Engineering and Web Infrastructure,Google</a></div>
+                                    </div>
+                                    <div class="image">
+                                        <img src="images/sarah.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <p>"Nuxt is a fantastic choice for teams building a production-grade product on the web. It aims to bake in performance best-practices while maintaining excellent Vue.js DX."</p>
+                                <div class="content">
+                                    <div class="info">
+                                        <div class="name"><b>Addy Osmani</b></div>
+                                        <div class="job"><a href="#">Chief Engineer of Chrome</a></div>
+                                    </div>
+                                    <div class="image">
+                                        <img src="images/addy.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-5">
+                    <div class="section-5">
+                        <div class="title">Ship faster with <span>Nuxt modules</span></div>
+                        <div class="desc">Nuxt is made with a robust plugin system. Integrate with popular CMS or UI libraries with one line of<br> code. With more than 15M monthly downloads and 1K contributors, Nuxt modules are your day to<br> day companions.</div>
+                    </div>
+                    <button class="button-middle">Explore Nuxt modules</button>
+                </div>
+
+                <div class="stat-6">
+                    <div class="section-6">
+                        <div class="title">A community of <span>Web builders</span></div>
+                        <div class="desc">Nuxt is composed of web builders all over the world who like to craft beautiful user experiences with Vue.js.</div>
+
+                        <div class="cards-div">
+                            <div class="card-con">
+                                <div class="card-fa">
+                                    <img src="images/npm1.svg" alt="" height="30px" />
+                                </div>
+                                <h1 class="card-title"><b>60M</b></h1>
+                                <p class="card-body">npm downloads</p>
+                            </div>
+                            <div class="card-con">
+                                <div class="card-fa">
+                                    <img src="images/discord1.svg" alt="" height="30px"/>
+                                </div>
+                                <h1 class="card-title"><b>20K</b></h1>
+                                <p class="card-body">Discord members</p>
+                            </div>
+                            <div class="card-con">
+                                <div class="card-fa">
+                                    <img src="images/github1.svg" alt="" height="30px"/>
+                                </div>
+                                <h1 class="card-title"><b>60K</b></h1>
+                                <p class="card-body">GitHub stars</p>
+                            </div>
+                            <div class="card-con">
+                                <div class="card-fa">
+                                    <img src="images/twitter1.svg" alt="" height="30px"/>
+                                </div>
+                                <h1 class="card-title"><b>78K</b></h1>
+                                <p class="card-body">Twitter followers</p>
+                            </div>
+                                            
+                        </div>
+                        <form class="frm">
+                            <div class="des">Get the latest releases and news about Nuxt and its ecosystem with our newsletter.</div>
+                            <div class="sub"><input type="email" name="email" placeholder="Email" /> <button class="button-1">Subscribe</button></div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="stat-7">
+                    <div class="section-7">
+                        <div class="title">A solution to cover <span>all your needs</span></div>
+                        <div class="desc">Developers deserve solutions as well designed as non-technical people. Our focus is to empower<br> Vue developers to ship great softwares with confidence.</div>
+                    </div>
+                    <div class="cards-div">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="images/shake.png" alt="" height="60px" />
+                            </div>
+                            <h4 class="card-title1"><b>Official agency partners</b></h4>
+                            <p class="card-body">A carefully built network of trusted agencies from all over the world!</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="images/nuxt1.png" alt="" height="60px" />
+                            </div>
+                            <h4 class="card-title1"><b>Nuxt expert network</b></h4>
+                            <p class="card-body">A network of freelance from all over the world,certified by the NuxtLabs team !</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="images/set.png" alt=""  height="60px"/>
+                            </div>
+                            <h4 class="card-title1"><b>Community support</b></h4>
+                            <p class="card-body">More 2000 active contributors on multiple platforms are here to help !</p>
+                        </div>
+                    </div>
+                    <button class="button-center">Discover our solutions</button>
+                </div>
+
+                <div class="stat-8">
+                    <div class="section-8">
+                        <div class="desc"><b>Getting Started</b></div>
+                        <div class="title"><b>Start your Nuxt Journey</b></div> 
+                        <div class="desc1">Learn everything you need to know,from beginner to master.</div>
+                    </div>
+                </div>
+                <div class="end"><button class="btn-front">Get Started</button><button class="btn-end">Explore Examples</button></div>
+                
+            </div>
+        </div></div>
+        <footer id="footer">
+            <div class="footer">
+                <div class="me"><span>&copy;</span> 2023 <b>Isaac Dominic</b></div>
+                <ul class="ff">
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Design Kit</a></li>
+                    <li><a href="#">NuxtLabs</a></li>
+                    <li><a href="#">Nuxt Studio</a></li>
+                </ul>
+                <ul class="f">
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+            </div>
+        </footer>
+
 </body>
 </html>
